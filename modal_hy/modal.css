@@ -54,24 +54,18 @@ body {
     cursor: pointer;
 }
 
-.member_image {
+#member_image {
     width: 150px;
     height: 150px;
-    border: 1px solid black;
     margin-bottom: 35px;
-    /* position: relative; */
-    /* overflow: hidden; */
-    /* border-radius: 100%; */
+    overflow: hidden;
+    border-radius: 100%;
 }
 
-/* 
-.modal .member_image img {
+#member_image img {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+    height: 100%;
+}
 
 #member_name {
     padding-bottom: 10px;

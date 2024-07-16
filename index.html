@@ -11,116 +11,31 @@
     />
   </head>
   <body>
-    <div class="team">
+    <div class="team" id="team">
       <h1 class="team-title">팀 "코린이"를 소개합니다!</h1>
       <p class="team-content">
-        안녕하세요! 팀 코린이입니다...! 웹 개발에 대한 열정과 호기심으로 뭉친
-        프론트엔드 초보 개발자들입니다! <br />
-        다양한 배경을 가진 팀원들이 모인 코린이는 각자의 강점을 살려 렵력하며,
+        안녕하세요! 팀 코린이입니다...! <br />웹 개발에 대한 열정과 호기심으로
+        뭉친 프론트엔드 초보 개발자들입니다! <br />
+        다양한 배경을 가진 팀원들이 모인 코린이는 각자의 강점을 살려 협력하며,
         사용자에게 더 나은 경험을 제공할 수 있는 멋진 웹 애플리케이션을
         개발하고자 노력하고 있습니다.
       </p>
+      <div class="divBtn">
+        <button id="introduceBtn">팀 소개</button>
+        <button id="memberBtn">팀원</button>
+        <button id="commentBtn">댓글달기</button>
+      </div>
     </div>
-    <div class="introduce">
+    <div class="introduce" id="introduce">
       <h3 class="team-introduce">팀 소개</h3>
-      <div class="introduce-content">
-        <p>
-          Est cillum incididunt est veniam nulla magna consequat. Veniam non
-          Lorem officia eiusmod consectetur esse id excepteur. Veniam commodo
-          sit adipisicing anim culpa. Est cillum incididunt est veniam nulla
-          magna consequat. Veniam non Lorem officia eiusmod consectetur esse id
-          excepteur. Veniam commodo sit adipisicing anim culpa.
-        </p>
-        <img class="team-image" src="./image/image.jpg" alt="" />
-      </div>
     </div>
-    <div class="team-member">
+    <div class="team-member" id="team-member">
       <h3>팀원</h3>
-      <div class="member">
-        <div class="member-info">
-          <img class="member-img" src="./image/1.jpg" alt="" />
-          <div class="member-content">
-            <div>신희범</div>
-            <div>MBTI: ISFP</div>
-            <div>소개</div>
-            <a href="https://github.com/HBeom00"
-              ><img class="github" src="./image/github.png" alt=""
-            /></a>
-            <a href="https://velog.io/@hbeom00/posts"
-              ><img src="./image/velog.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <img class="member-img" src="./image/2.jpg" alt="" />
-          <div class="member-content">
-            <div>김하영</div>
-            <div>MBTI: ISFJ</div>
-            <div>소개</div>
-            <a href="https://github.com/duddlfkd02"
-              ><img class="github" src="./image/github.png" alt=""
-            /></a>
-            <a href="https://velog.io/@duddlfkd02/posts"
-              ><img src="./image/velog.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <img class="member-img" src="./image/3.jpg" alt="" />
-          <div class="member-content">
-            <div>송재헌</div>
-            <div>MBTI: ISTJ</div>
-            <div>소개</div>
-            <a href="https://github.com/spmrsong"
-              ><img class="github" src="./image/github.png" alt=""
-            /></a>
-            <a href="https://pokbeg.tistory.com/"
-              ><img src="./image/tistory.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <img class="member-img" src="./image/4.jpg" alt="" />
-          <div class="member-content">
-            <div>서영진</div>
-            <div>MBTI: ESFJ</div>
-            <div>소개</div>
-            <a href="https://github.com/youngjin34"
-              ><img class="github" src="./image/github.png" alt=""
-            /></a>
-            <a href="https://velog.io/@epik34/posts"
-              ><img src="./image/velog.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <img class="member-img" src="./image/5.jpg" alt="" />
-          <div class="member-content">
-            <div>이지영</div>
-            <div>MBTI: ISFJ</div>
-            <div>소개</div>
-            <a href="https://github.com/wldud7788"
-              ><img class="github" src="./image/github.png" alt=""
-            /></a>
-            <a href="https://velog.io/@rooftop7788/posts"
-              ><img src="./image/velog.png" alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="comment" id="comment">
+      <h3>댓글 달기</h3>
     </div>
 
-    <!-- 모달 -->
-    <div class="modal" id="memberModal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modalContent">
-          <h2 id="modalTitle"></h2>
-          <p id="modalInfo"></p>
-        </div>
-      </div>
-    </div>
-
-    <script src="modal.js"></script>
+    <script src="scrollBy.js"></script>
   </body>
 </html>

@@ -245,6 +245,7 @@ body {
 
 .photo:hover .overlay {
   opacity: 1;
+  cursor: pointer;
 }
 
 .icons {

@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalInfo.appendChild(img);
 
       modalInfo.innerHTML += `
-        <div>MBTI: ${members[index].mbti}</div>
+        <div><b>MBTI</b><br>${members[index].mbti}</div>
         <div><b>자신의 장점</b><br>${members[index].advantages}</div>
         <br>
         <div><b>나의 스타일</b><br>${members[index].style}</div>
@@ -84,9 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div><b>우리 팀의 궁극적인 목표!</b><br>${members[index].goal}</div>
         <br>
         <div><b>우리 팀의 약속</b><br>${members[index].promise}</div>
-        <br>
-        <a href="${members[index].githubLink}" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="${members[index].velogLink}" target="_blank"><i class="bi bi-postcard"></i></a>
       `;
     });
   });

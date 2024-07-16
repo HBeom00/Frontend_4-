@@ -135,6 +135,11 @@ i {
   padding-right: 30px;
 }
 
+.github {
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
 /* modal */
 .modal {
   display: none;

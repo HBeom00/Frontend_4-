@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+body {
+  font-family: 'Dongle';
+  font-size: 32px;
+  margin: 0;
+}
+
+.team {
+  background-image: url('https://images.unsplash.com/photo-1617042375876-a13e36732a04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  top: 200px;
+  left: 46%;
+}
+
+.team-content {
+  position: absolute;
+  top: 320px;
+  left: 46%;
+  width: 42%;
+}
+
+.introduce {
+  padding-bottom: 90px;
+  margin-bottom: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: gradientChange 10s infinite;
+}
+
+.team-introduce {
+  margin: 0;
+  padding-top: 100px;
+}
+
+.introduce-content {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.introduce p {
+  padding-right: 200px;
+}
+
+.team-image {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.team-member {
+  background-color: rgb(111, 140, 160);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-member > h3 {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.member {
+  width: 50%;
+}
+
+.comment {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.divBtn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.divBtn > button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 70px;
+  font-family: 'Dongle';
+  font-size: 32px;
+  color: white;
+}
+
+/* ------------------------------------------------------- */
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description,
+.link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #78c7d2;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
+
+/* ------------------------------------------- */
+
+.wrap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.team-title {
+  display: flex;
+  justify-content: center;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.member {
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  position: relative;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.photo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons a img {
+  height: 24px;
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* ---------------------------------- */
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+}
+
+/* 모달 관련 스타일 */
+#modal_container {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* 배경 어둡게 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .closeBtn img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#member_image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+#member_image img {
+  width: 100%;
+  height: 100%;
+}
+
+#member_name {
+  padding-bottom: 10px;
+}
+
+#member_content {
+  margin: 50px auto 0px;
+}
+
+#member_content .content_inner {
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  background: var(--color-white);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 20px;
+}

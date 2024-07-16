@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./chat.css" />
-    <link rel="stylesheet" href="./reset.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="./chat.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <script type="module">
       // Firebase SDK 라이브러리 가져오기
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
@@ -45,14 +54,14 @@
 
       // firebase에 저장된 데이터 가져오기
       const arr = [];
-
       let docs = await getDocs(collection(db, "chattings"));
       docs.forEach((doc) => {
         let row = doc.data();
         let content = row["content"];
         arr.push(content);
       });
-      console.log(arr);
+      // console.log(arr);
+      // console.log(dateArr);
       arr.forEach((el, index) => {
         if (index % 2 === 0) {
           // $("#chatting").css({
@@ -85,13 +94,56 @@
       });
     </script>
   </head>
+
   <body>
-    <div>
-      <div id="func">
-        <input type="text" id="inputBox" placeholder="댓글을 남겨주세요" />
-        <button id="postingBtn">게시</button>
+    <div class="team" id="team">
+      <h1 class="title">팀 "코린이"를 소개합니다!</h1>
+      <p class="team-content">
+        안녕하세요! 팀 코린이입니다...! <br />웹 개발에 대한 열정과 호기심으로
+        뭉친 프론트엔드 초보 개발자들입니다! <br />
+        다양한 배경을 가진 팀원들이 모인 코린이는 각자의 강점을 살려 협력하며,
+        사용자에게 더 나은 경험을 제공할 수 있는 멋진 웹 애플리케이션을
+        개발하고자 노력하고 있습니다.
+      </p>
+      <div class="divBtn frame">
+        <button class="btn" id="introduceBtn"><span>팀 소개</span></button>
+        <button class="btn" id="memberBtn"><span>팀원</span></button>
+        <button class="btn" id="commentBtn"><span>댓글 달기</span></button>
       </div>
-      <div id="chatting"></div>
     </div>
+    <div style="background-color: red" class="introduce" id="introduce">
+      <h3 class="team-introduce">팀 소개</h3>
+    </div>
+    <div class="wrap" id="team-member">
+      <h1 class="team-title">팀원</h1>
+      <div class="team-container"></div>
+    </div>
+
+    <div id="F_div">
+      <div>
+        <div id="func">
+          <input type="text" id="inputBox" placeholder="댓글을 남겨주세요" />
+          <button id="postingBtn">게시</button>
+        </div>
+        <div id="chatting"></div>
+      </div>
+    </div>
+
+    <!-- 모달 시작 -->
+    <div id="modal_container">
+      <div id="modal" class="modal">
+        <span class="closeBtn" id="close-modal">
+          <img src="images/close.png" alt="닫기버튼" />
+        </span>
+        <div id="member_image"></div>
+        <h3 id="member_name"></h3>
+        <p id="member_age"></p>
+        <div id="member_content"></div>
+      </div>
+    </div>
+
+    <script src="scrollBy.js"></script>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

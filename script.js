@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         memberDiv.className = 'member';
 
         memberDiv.innerHTML = `
-            <div class="member_content" id="member_content_${idx}">
+            <div class="photo member_content" id="member_content_${idx}">
                 <img src="${member.backgroundImage}" alt="${member.name}">
                 <div class="overlay">${member.name}</div>
             </div>

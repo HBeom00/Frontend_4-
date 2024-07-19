@@ -113,14 +113,3 @@
 #sendChat {
   width: 26px;
 }
-
-/* .rightDiv:nth-child(even) {
-  text-align: end;
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-} */
-
-/* .leftDiv:nth-child(odd) {
-  text-align: start;
-} */
